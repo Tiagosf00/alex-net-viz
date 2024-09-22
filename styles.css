@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+#videoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+video, canvas {
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 224px;
+    height: 224px;
+}
+
+canvas#canvas {
+    display: none; /* Hide the intermediate canvas */
+}
+
+#outputContainer {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.layer-container {
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns */
+    grid-gap: 10px;
+}
+
+.grid-container img {
+    width: 100px; /* Adjust the width of each activation map */
+    height: 100px; /* Adjust the height of each activation map */
+    border: 2px solid #333;
+    border-radius: 8px;
+    image-rendering: pixelated; /* Make the images look pixelated when scaled up */
+}
+
+#predictionsContainer {
+    text-align: center;
+}
+
+#predictionsContainer h2 {
+    margin-bottom: 10px;
+}
+
+#predictionsContainer p {
+    margin: 5px 0;
+}

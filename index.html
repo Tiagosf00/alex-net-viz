@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Feed with PyTorch Processing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Webcam Feed with PyTorch Processing</h1>
+    <div id="mainContainer">
+        <div id="videoContainer">
+            <video id="webcam" autoplay></video>
+            <canvas id="canvas" width="224" height="224" style="display: none;"></canvas>
+            <label for="layerSelect">Select Layer:</label>
+            <select id="layerSelect">
+                <option value="0">Layer 1</option>
+                <option value="1">Layer 2</option>
+                <option value="2">Layer 3</option>
+                <option value="3">Layer 4</option>
+                <option value="4">Layer 5</option>
+                <option value="5">Layer 6</option>
+                <option value="6">Layer 7</option>
+                <option value="7">Layer 8</option>
+                <option value="8">Layer 9</option>
+                <option value="9">Layer 10</option>
+                <option value="10">Layer 11</option>
+                <option value="11">Layer 12</option>
+            </select>
+        </div>
+        <div id="predictionsContainer"></div>
+    </div>
+    <div id="outputContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
